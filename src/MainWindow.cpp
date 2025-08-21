@@ -18,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent) :
   m_sphR{1.0}, m_sphG{1.0}, m_sphB{1.0} {
 
   ui->setupUi(this);
+  //ui->quickWidget->setSource(QUrl("qrc:/demo.qml"));
+  //auto errs = ui->quickWidget->errors();
 
   // Set up rendering (apparently this order matters!)
   m_renderWindow->AddRenderer(m_renderer);

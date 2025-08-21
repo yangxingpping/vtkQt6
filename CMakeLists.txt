@@ -47,7 +47,7 @@ set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_AUTOUIC_SEARCH_PATHS} ${FORMS_DIR})
 #********* executable *****************
 if (WIN32)
   # no cmd line on windows
-  add_executable(${PROJ} WIN32 ${SOURCES})
+  add_executable(${PROJ} WIN32 ${SOURCES} qrc.qrc qml/demo.qml)
 else()
   add_executable(${PROJ} ${SOURCES})
 endif()
