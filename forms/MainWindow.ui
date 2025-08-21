@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>838</width>
-    <height>602</height>
+    <width>1064</width>
+    <height>710</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>115</x>
       <y>10</y>
-      <width>711</width>
-      <height>531</height>
+      <width>551</width>
+      <height>361</height>
      </rect>
     </property>
    </widget>
@@ -246,7 +246,7 @@
      <number>1</number>
     </property>
     <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+     <enum>Qt::Orientation::Horizontal</enum>
     </property>
    </widget>
    <widget class="QPushButton" name="colorButton">
@@ -262,20 +262,38 @@
      <string>Color Sphere</string>
     </property>
    </widget>
+   <widget class="QQuickWidget" name="quickWidget">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>410</y>
+      <width>581</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="resizeMode">
+     <enum>QQuickWidget::ResizeMode::SizeRootObjectToView</enum>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>838</width>
-     <height>22</height>
+     <width>1064</width>
+     <height>20</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>QQuickWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">QtQuickWidgets/QQuickWidget</header>
+  </customwidget>
   <customwidget>
    <class>QVTKOpenGLNativeWidget</class>
    <extends>QOpenGLWidget</extends>

@@ -54,3 +54,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+/build_win/
+
+CMakeLists.txt.user

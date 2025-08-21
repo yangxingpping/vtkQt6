@@ -16,7 +16,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_PREFIX_PATH "/Users/sekar/Programs/Qt/6.0.0/clang_64/")
 
 find_package(OpenGL)
-find_package(Qt6 COMPONENTS Core GUI OpenGL Widgets Xml REQUIRED)
+find_package(Qt6 COMPONENTS Core GUI OpenGL Widgets Xml QuickWidgets REQUIRED)
 
 
 #********** include Vtk *****************
@@ -59,6 +59,6 @@ target_include_directories(${PROJ} PRIVATE ${FORMS_DIR} ${INCLUDE_DIR} ${SOURCE_
 
 
 #********** libraries for linking *****************
-target_link_libraries(${PROJ} Qt6::OpenGL Qt6::Widgets Qt6::Xml)
+target_link_libraries(${PROJ} Qt6::OpenGL Qt6::Widgets Qt6::Xml Qt6::QuickWidgets)
 target_link_libraries(${PROJ} ${QT_LIBRARIES} ${OPENGL_LIBRARIES})
 target_link_libraries(${PROJ} ${VTK_LIBRARIES})
